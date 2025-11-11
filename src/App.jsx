@@ -35,7 +35,7 @@ const DATA = {
       demo: "https://your-demo.example.com",
     },
     {
-      name: "SearchGazer Analysis",
+      name: "SearchGazer Recommendation Analysis",
       tagline: "Eye‑tracking feature extraction for content recommendations",
       tech: ["Python", "Pandas", "NumPy", "Matplotlib"],
       desc:
