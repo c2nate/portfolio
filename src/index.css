@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --color-bg: #fafafa;       /* main background */
+    --color-text: #1a1a1a;     /* default text color */
+    --color-accent: #6366f1;   /* accent color (links, highlights, etc.) */
+  }
+  
+  .dark {
+    --color-bg: #0a0a0a;       /* dark mode background */
+    --color-text: #e5e5e5;     /* dark mode text */
+    --color-accent: #818cf8;   /* slightly softer accent for dark mode */
+  }
+  

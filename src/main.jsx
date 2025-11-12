@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// src/main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
+import { getInitialTheme, applyTheme } from './theme.js';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+// Apply theme before the app mounts (prevents flash)
+applyTheme(getInitialTheme());
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+  </React.StrictMode>
+);
