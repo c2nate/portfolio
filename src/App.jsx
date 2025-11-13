@@ -29,8 +29,8 @@ const DATA = {
   email: "NDaleDev240@gmail.com",
   links: {
     github: "https://github.com/c2nate",
-    linkedin: "www.linkedin.com/in/nathaniel-dale-bb488a24a",
-    resume: "/Resume-NathanielDale.pdf", 
+    linkedin: "https://www.linkedin.com/in/nathaniel-dale-bb488a24a",
+    resume: "/NathanielDale-Resume.pdf", 
   },
   skills: [
     "Python", "Java", "C++", "React", "TypeScript", "Node.js", "Django", "PostgreSQL",
@@ -129,7 +129,7 @@ const DATA = {
 
 // --- UI helpers ---
 const Section = ({ id, icon: Icon, title, children }) => (
-  <section id={id} className="scroll-mt-24 py-14" aria-labelledby={`${id}-title`}>
+  <section id={id} className="scroll-mt-24 py-8" aria-labelledby={`${id}-title`}>
     <div className="max-w-6xl mx-auto px-4">
       <div className="flex items-center gap-2 mb-6">
         <Icon className="w-5 h-5" aria-hidden />
@@ -207,7 +207,12 @@ export default function PortfolioApp() {
                 <a href={DATA.links.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border rounded-xl px-3 py-2">
                   <Linkedin className="w-4 h-4" /> LinkedIn
                 </a>
-                <a href={DATA.links.resume} className="inline-flex items-center gap-2 border rounded-xl px-3 py-2">
+                <a
+                  href="/NathanielDale-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border rounded-xl px-3 py-2"
+                >
                   <FileText className="w-4 h-4" /> Resume
                 </a>
                 <a href="#contact" className="inline-flex items-center gap-2 border rounded-xl px-3 py-2">
